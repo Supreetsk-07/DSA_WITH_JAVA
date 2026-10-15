@@ -35,6 +35,17 @@ class pattern_practice {
         }
     }
 
+    void star_with_I_number(int n){
+        int i, j;
+        System.out.println("Star pattern with number (right). ");
+        for (i = 0 ; i < n ; i++){
+            for (j = 0 ; j <= i ; j++){
+                System.out.print(i+1+" ");
+            }
+            System.out.println("");
+        }
+    }
+
     public static void main(String[] args) {
         int n;
         Scanner s1 = new Scanner(System.in);
@@ -44,5 +55,6 @@ class pattern_practice {
         pp.star(n);
         pp.star1(n);
         pp.star_with_number(n);
+        pp.star_with_I_number(n);
     }
 }
